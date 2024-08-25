@@ -2,6 +2,7 @@
   "compilerOptions": {
     "module": "CommonJS",
     "types": [],
+    "lib": ["ES2020.Intl", "ES2018", "DOM"],
     "sourceMap": true,
     "target": "ES2018",
     "strict": true,
