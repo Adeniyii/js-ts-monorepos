@@ -10,7 +10,11 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "greet": "scripty",
+    "build": "scripty",
+    "clean": "scripty",
+    "lint": "scripty",
+    "test": "scripty"
   },
   "volta": {
     "node": "16.14.2",
@@ -20,6 +24,11 @@
     "@typescript-eslint/eslint-plugin": "^8.2.0",
     "@typescript-eslint/parser": "^8.2.0",
     "eslint": "^9.9.1",
-    "rimraf": "^6.0.1"
+    "lerna": "^8.1.8",
+    "rimraf": "^6.0.1",
+    "scripty": "^2.1.1"
+  },
+  "scripty": {
+    "path": "./scripts/workspace"
   }
 }

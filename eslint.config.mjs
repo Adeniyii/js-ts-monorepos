@@ -13,7 +13,7 @@ recommendedConfig: js.configs.recommended,
 
 export default [
   ...compat.config({
-    root: true,
+    // root: true,
     env: {
       es2021: true,
     },
@@ -35,6 +35,6 @@ export default [
       '@typescript-eslint/no-unsafe-return': 'error',
     },
   }),
-  { files: ['src/*.ts', 'src/*.js'] },
-  {ignores: ["**/eslint.config.*", "**/tests/*.ts", "dist"]}
+  {ignores: ["**/eslint.config.*", "**/tests/*.ts", "dist", "node_modules"]},
+  { files: ['**/src/*.ts', '**/src/*.js'] }
 ];
